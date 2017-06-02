@@ -1,5 +1,5 @@
 # problem statement
-removes files & dirs ignored by git
+clones a git repo via https transport
 
 # example usage
 
@@ -20,17 +20,8 @@ opctl run github.com/opspec-pkgs/git.clone-https#VERSION
 ## compose
 
 ```yaml
-name: dummy
-inputs:
-  srcDir:
-    dir:
-      default: .
-  opts:
-    string:
-      default: -ffXd -e !.idea/ # use custom clean opts
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/git.clone-https#VERSION }
-    inputs: { username, password,  }
-    outputs: { srcDir }
+op:
+   pkg: { ref: github.com/opspec-pkgs/git.clone-https#VERSION }
+   inputs: { username, password, url }
+   outputs: { repo }
 ```
