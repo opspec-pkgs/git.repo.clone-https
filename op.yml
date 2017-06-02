@@ -29,5 +29,5 @@ run:
       username:
       password:
       url:
-    image: { ref: 'opspecpkgs/git.clone-https:0.0.1' }
+    image: { ref: 'opspecpkgs/git.clone-https:1.0.0' }
     workDir: /
