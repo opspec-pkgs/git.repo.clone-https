@@ -1,0 +1,33 @@
+name: github.com/opspec-pkgs/git.clone-https
+description: clones a git repo via https transport
+inputs:
+  username:
+    string:
+      constraints: { minLength: 1 }
+      description: username for auth
+  password:
+    string:
+      constraints: { minLength: 1 }
+      description: password for auth
+      isSecret: true
+  url:
+    string:
+      constraints: { format: uri }
+      description: url to clone from
+outputs:
+  repo:
+    dir:
+      description: the cloned git repo
+run:
+  container:
+    cmd: [ /cmd.sh ]
+    dirs:
+      /repo: repo
+    files:
+      /cmd.sh:
+    envVars:
+      username:
+      password:
+      url:
+    image: { ref: 'opspecpkgs/git.clone-https:0.0.1' }
+    workDir: /
