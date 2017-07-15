@@ -1,7 +1,7 @@
-# problem statement
+# Problem statement
 clones a git repo via https transport
 
-# example usage
+# Example usage
 
 > note: in examples, VERSION represents a version of the git.clone-https pkg
 
@@ -22,6 +22,15 @@ opctl run github.com/opspec-pkgs/git.clone-https#VERSION
 ```yaml
 op:
    pkg: { ref: github.com/opspec-pkgs/git.clone-https#VERSION }
-   inputs: { username, password, url }
-   outputs: { repo }
+   inputs: 
+      username:
+      password:
+      url:
+   outputs:
+      repo:
 ```
+
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/git.clone-https/issues)
