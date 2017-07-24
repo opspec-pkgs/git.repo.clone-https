@@ -18,6 +18,7 @@ outputs:
   repo:
     dir:
       description: the cloned git repo
+version: 1.0.0
 run:
   container:
     cmd: [ /cmd.sh ]
