@@ -23,7 +23,7 @@ run:
   container:
     cmd: [ /cmd.sh ]
     dirs:
-      /repo: repo
+      /repo: $(repo)
     files:
       /cmd.sh:
     envVars:
