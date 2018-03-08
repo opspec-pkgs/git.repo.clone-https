@@ -1,4 +1,4 @@
-name: github.com/opspec-pkgs/git.clone-https
+name: github.com/opspec-pkgs/git.repo.clone-https
 description: clones a git repo via https transport
 inputs:
   username:
@@ -18,7 +18,7 @@ outputs:
   repo:
     dir:
       description: the cloned git repo
-version: 1.0.0
+version: 1.1.0
 run:
   container:
     cmd: [ /cmd.sh ]
@@ -30,5 +30,5 @@ run:
       username:
       password:
       url:
-    image: { ref: 'opspecpkgs/git.clone-https:1.0.0' }
+    image: { ref: 'opspecpkgs/git.repo.clone-https:1.1.0' }
     workDir: /

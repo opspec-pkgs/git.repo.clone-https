@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/git.clone-https.svg?branch=master)](https://travis-ci.org/opspec-pkgs/git.clone-https)
+[![Build Status](https://travis-ci.org/opspec-pkgs/git.repo.clone-https.svg?branch=master)](https://travis-ci.org/opspec-pkgs/git.repo.clone-https)
 
 <img src="icon.svg" alt="icon" height="100px">
 
@@ -15,20 +15,20 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/git.clone-https#1.0.0
+opctl pkg install github.com/opspec-pkgs/git.repo.clone-https#1.1.0
 ```
 
 ## Run
 
 ```
-opctl run github.com/opspec-pkgs/git.clone-https#1.0.0
+opctl run github.com/opspec-pkgs/git.repo.clone-https#1.1.0
 ```
 
 ## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/git.clone-https#1.0.0 }
+  pkg: { ref: github.com/opspec-pkgs/git.repo.clone-https#1.1.0 }
   inputs:
     username:
     password:
@@ -42,7 +42,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://github.com/opspec-pkgs/git.clone-https/issues)
+[open an issue](https://github.com/opspec-pkgs/git.repo.clone-https/issues)
 
 # Releases
 
