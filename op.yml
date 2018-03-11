@@ -18,7 +18,7 @@ outputs:
   repo:
     dir:
       description: the cloned git repo
-version: 1.1.0
+version: 1.0.0
 run:
   container:
     cmd: [ /cmd.sh ]
@@ -30,5 +30,5 @@ run:
       username:
       password:
       url:
-    image: { ref: 'opspecpkgs/git.repo.clone-https:1.1.0' }
+    image: { ref: 'opspecpkgs/git.repo.clone-https:1.0.0' }
     workDir: /
